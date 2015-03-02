@@ -39,12 +39,19 @@ public class HannonHillSecret {
     
     /**
      * @param number
-     * @return 
+     * @return the number
      */
     private static int secret(int number) {
         return number;
     }
     
+    /**
+     * The purpose of this function is to return all of the prime numbers that are
+     * less than a number
+     * @param limit
+     * @return List of integers of all the prime numbers that are less
+     * than or equal to the limit
+     */
     private static List<Integer> getAllPrimes(int limit) {
         // initially assume all integers are prime
         boolean[] isPrime = new boolean[limit + 1];
@@ -74,6 +81,13 @@ public class HannonHillSecret {
         
         return primeNumbers;
     }
+    
+    /*
+     * The purpose of this function is to return if a list of prime numbers
+     * are an additive
+     * @param primeNumbers - all of the prime numbers that are less than the limit
+     * @return boolean - True if secret false otherwise
+    */
     
     private static boolean checkSecret(List<Integer> primeNumbers) {
         
